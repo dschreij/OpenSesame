@@ -20,6 +20,8 @@ along with OpenSesame.  If not, see <http://www.gnu.org/licenses/>.
 from libopensesame.py3compat import *
 import platform
 
+import pygame_sdl2
+pygame_sdl2.import_as_pygame()
 import pygame
 from pygame.locals import *
 from string import whitespace

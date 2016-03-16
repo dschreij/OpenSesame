@@ -18,6 +18,8 @@ along with OpenSesame.  If not, see <http://www.gnu.org/licenses/>.
 """
 
 from libopensesame.py3compat import *
+import pygame_sdl2
+pygame_sdl2.import_as_pygame()
 import pygame
 from openexp._color.color import color
 

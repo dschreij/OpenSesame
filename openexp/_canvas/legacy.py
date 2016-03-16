@@ -21,6 +21,7 @@ from libopensesame.py3compat import *
 from pygame.locals import *
 import pygame_sdl2
 pygame_sdl2.import_as_pygame()
+import pygame
 import os
 from libopensesame.exceptions import osexception
 from libopensesame import debug, misc

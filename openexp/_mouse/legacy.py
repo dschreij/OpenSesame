@@ -23,6 +23,8 @@ from openexp._mouse import mouse
 from openexp._coordinates.legacy import legacy as legacy_coordinates
 from libopensesame.exceptions import osexception
 from openexp.backend import configurable
+import pygame_sdl2
+pygame_sdl2.import_as_pygame()
 import pygame
 
 class legacy(mouse.mouse, legacy_coordinates):

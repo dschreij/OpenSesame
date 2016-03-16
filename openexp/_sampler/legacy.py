@@ -19,6 +19,8 @@ along with OpenSesame.  If not, see <http://www.gnu.org/licenses/>.
 
 from libopensesame.py3compat import *
 from pygame.locals import *
+import pygame_sdl2
+pygame_sdl2.import_as_pygame()
 import pygame
 from openexp._sampler import sampler
 from libopensesame.exceptions import osexception
@@ -186,8 +188,8 @@ class legacy(sampler.sampler):
 			print(
 				u'openexp.sampler._legacy.init_sound(): mixer already initialized, closing')
 			pygame.mixer.quit()
-		mixer.pre_init(experiment.var.sound_freq, experiment.var.sound_sample_size, \
-			experiment.var.sound_channels, experiment.var.sound_buf_size)
+		# mixer.pre_init(experiment.var.sound_freq, experiment.var.sound_sample_size, \
+		# 	experiment.var.sound_channels, experiment.var.sound_buf_size)
 		mixer.init()
 
 	@staticmethod

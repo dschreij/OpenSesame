@@ -19,6 +19,8 @@ along with OpenSesame.  If not, see <http://www.gnu.org/licenses/>.
 
 from libopensesame.py3compat import *
 from openexp._clock.clock import clock
+import pygame_sdl2
+pygame_sdl2.import_as_pygame()
 import pygame
 
 class legacy(clock):
