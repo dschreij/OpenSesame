@@ -19,7 +19,8 @@ along with OpenSesame.  If not, see <http://www.gnu.org/licenses/>.
 
 from libopensesame.py3compat import *
 from pygame.locals import *
-import pygame
+import pygame_sdl2
+pygame_sdl2.import_as_pygame()
 import os
 from libopensesame.exceptions import osexception
 from libopensesame import debug, misc
@@ -222,7 +223,6 @@ class legacy(canvas.canvas, legacy_coordinates):
 
 	@staticmethod
 	def init_display(experiment):
-
 		# Intialize PyGame
 		pygame.init()
 
@@ -286,5 +286,4 @@ class legacy(canvas.canvas, legacy_coordinates):
 
 	@staticmethod
 	def close_display(experiment):
-
 		pygame.display.quit()
